@@ -1,6 +1,6 @@
-# Documentação do Projeto
+# Documentação do Projeto (TIDocs)
 
-Esta pasta armazena a documentação do projeto na forma de um site que fica disponível por meio do GitHub Pages e pode ser incluído, também, no site da solução hospedada.
+Esta pasta armazena a documentação do projeto para a disciplina de **Trabalho Interdisciplinar 1** dos cursos de Tecnologia da Informação da **[PUC Minas](https://pucminas.br)**. Essa documentação é estruturada na forma de um site que fica disponível por meio do GitHub Pages e pode ser incluído, também, no site da solução hospedada. Um [exemplo publicado do TIDocs](https://webtech-pucminas.github.io/ti1-template/) está disponível por meio do repositório do **[WebTech PUC Minas](https://github.com/webtech-pucminas)**.
 
 A documentação do projeto inclui as seguintes seções:
 
