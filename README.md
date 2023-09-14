@@ -1,17 +1,19 @@
-# Nome do projeto
+#UFU- Urubu das Finanças
 
 Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Raul Duarte
+* Luan Magno
+* Gustavo Anselmo
+* Arthur Faria
+* João Vitor
+* João Vitor P.S
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
+* Pedro Felime Alves de Oliveira 
 
 
 ## Instruções de utilização
