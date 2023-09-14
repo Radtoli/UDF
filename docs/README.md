@@ -61,11 +61,11 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 
 ## Personas
 
-![alt Gabriel](docs/assets/images/Gabriel.png)
-![alt Lucas](docs/assets/images/Lucas.png)
-![alt Neide](docs/assets/images/Neide.png)
-![alt Robson](docs/assets/images/Robson.png)
-![alt Thais](docs/assets/images/Thais.png)
+![alt Gabriel](https://github.com/Radtoli/UDF/blob/master/docs/assets/images/Gabriel.png)
+![alt Lucas](https://github.com/Radtoli/UDF/blob/master/docs/assets/images/Lucas.png)
+![alt Neide](https://github.com/Radtoli/UDF/blob/master/docs/assets/images/Neide.png)
+![alt Robson](https://github.com/Radtoli/UDF/blob/master/docs/assets/images/Robson.png)
+![alt Thais](https://github.com/Radtoli/UDF/blob/master/docs/assets/images/Thais.png)
 
 ## Mapa empatia
 
