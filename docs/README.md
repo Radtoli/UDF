@@ -61,7 +61,15 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 
 ## Personas
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
+![alt Gabriel](docs/assets/images/Gabriel.png)
+![alt Lucas](docs/assets/images/Lucas.png)
+![alt Neide](docs/assets/images/Neide.png)
+![alt Robson](docs/assets/images/Robson.png)
+![alt Thais](docs/assets/images/Thais.png)
+
+## Mapa empatia
+
+
 
 **Links Úteis**:
 
