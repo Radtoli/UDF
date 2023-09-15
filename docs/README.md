@@ -14,15 +14,13 @@ A documentação do projeto inclui as seguintes seções:
 
 O template para o site é estruturado e permite que a equipe evolua a documentação do projeto à medida que avance no desenvolvimento.
 
-# Orientações gerais
+# Introdução
 
-Esta seção traz explicações breves sobre o conjunto de artefatos que precisam ser incluídos na documentação do projeto com uma conjunto de links importantes para que se entenda como criar cada coisa. 
+Atualmente a dificuldade na gestão das finanças pessoais é um desafio que afeta milhões pessoas em nossa sociedade. As complexidades do mundo financeiro muitas vezes deixam o indivíduo perdido em um mar de incertezas econômicas. Além disso, a ignorância financeira e a incapacidade de tomar decisões informadas podem levar a dívidas crescentes, estresse financeiro e frustrações ao tentar alcançar metas de vida. Saber organizar suas rendas, lidar com dívidas, e realizar investimentos são conhecimentos essenciais e cada vez mais se torna imprescindível que eles sejam mais acessíveis. 
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+O problema que buscamos resolver é a falta de organização financeira e a gestão econômica incorreta que ocorrem graças ao fato de grande parte da população não possuir uma educação financeira adequada. Isso se torna preocupante tendo em vista a importância que esta educação desempenha não apenas na qualidade de vida individual, mas também na estabilidade econômica da sociedade como um todo. 
 
 **Links Úteis**:
 
@@ -32,7 +30,11 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Nosso objetivo neste projeto é solucionar o problema mencionado. O urubu das finanças surge como uma resposta a esse problema, oferecendo ao usuário uma plataforma eficiente e intuitiva para monitorar suas receitas, despesas, investimentos e dívidas e dando-lhe as ferramentas e recursos necessários para ter uma visão clara de sua situação financeira. Isso resultará em um maior controle monetário e mais confiança nas tomadas de decisões. Tudo isso tornará possível que nossos clientes conquistem uma gestão financeira sólida e se tornem indivíduos bem-sucedidos.
+Como principais objetivos podemos destacar:
+*Possibilitar o controle de despesas e ganhos.
+*Apresentar sugestões de investimento.
+
 
 **Links Úteis**:
 
@@ -40,9 +42,7 @@ Aqui você deve descrever os objetivos do trabalho indicando que o objetivo gera
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A pesquisa recente do Conselho Regional de Contabilidade GO, que avaliou o nível de educação financeira global, traz à tona uma realidade alarmante para o Brasil. Ao ocupar a 74ª posição em um ranking de 144 países, o país se encontra atrás de nações economicamente mais desfavorecidas, como Madagascar, Togo e Zimbábue. Essa classificação reflete uma lacuna preocupante em termos de educação financeira, onde muitos brasileiros estão enfrentando dificuldades na gestão de suas finanças pessoais. Diante desse cenário, fica evidente a necessidade urgente de um projeto dedicado à promoção da educação financeira no Brasil. Precisamos capacitar nossos cidadãos para construir um futuro econômico mais seguro. O urubu das finanças se justifica como uma resposta crucial a esse desafio, visando elevar o nível de educação financeira no país e contribuir para que os brasileiros a alcancem uma posição mais sólida no cenário global.
 
 **Links Úteis**:
 
@@ -50,9 +50,7 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
+Nosso projeto tem como foco principal atender às necessidades de um público diversificado, abrangendo desde jovens adultos que estão dando seus primeiros passos no mundo financeiro até pessoas mais experientes que buscam aprimorar suas habilidades financeiras. Entendemos que a educação econômica é universalmente relevante, independentemente da idade ou situação financeira. Portanto, nosso público-alvo inclui jovens e estudantes que desejam adquirir conhecimento desde cedo, trabalhadores que pretendem se planejar para o futuro, e até mesmo aposentados que procuram maximizar seu patrimônio. Nosso compromisso é fornecer recursos acessíveis e relevantes que atendam às diversas necessidades desse público.
 
 **Links Úteis**:
 
