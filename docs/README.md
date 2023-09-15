@@ -95,6 +95,19 @@ Lembre-se que cada requisito deve corresponder à uma e somente uma característ
 - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
 - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
+## Metodologia
+A Metodologia definida se trata de um conjunto de ferramentas e recursos digitais utilizadas por toda a equipe em diversos momentos durante a execução e organização do projeto.
+Para esse tipo de projeto em equipe, é crucial ferramentas para determina o fluxo de tarefas e as prioridades de execução, além disso, foi necessário ferramentas para visualizar a idealização do designer das páginas antes da criação, e para a criação, é imprescindível um recurso que permita versionar os códigos da equipe.
+
+**Relação em ambiente de trabalho**
+
+| Função | Plataforma | Link |
+|------|-------| ------|
+|Repositório de código e arquivos| GitHub|https://github.com/Radtoli/UDF|
+|Criação dos Wireframes|Figma|https://bitlybr.com/FBZAT|
+|Gestão das tarefas| Trello |https://trello.com/b/UM0T0l8L/evi|
+
+
 ## User Flow
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
