@@ -173,9 +173,33 @@ E a última tela, chamada de Visu, pretende mostrar de forma simples ao usuário
 
 ## Gestão de Projetos
 
- Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
+ Processo de Trabalho Baseado nas Metodologias Ágeis (Design Thinking e Scrum):
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+Para garantir a eficiência e a colaboração no desenvolvimento do projeto, adotamos uma abordagem ágil, combinando elementos do Design Thinking e do Framework Scrum. Isso nos permitiu criar um ambiente flexível e orientado para o cliente, garantindo que nossa solução atendesse às necessidades reais dos usuários. Abaixo estão os principais aspectos do nosso processo de trabalho:
+Design Thinking:
+
+O Design Thinking foi o primeiro passo em nossa jornada de desenvolvimento, pois nos permitiu entender a fundo as necessidades dos usuários e definir a direção do projeto. Realizamos as seguintes etapas:
+
+Empatia: Realizamos entrevistas e pesquisas com os potenciais usuários para compreender suas necessidades, desejos e dores.
+
+Definição do Problema: Com base nas informações coletadas, definimos claramente o problema que nossa solução deveria resolver.
+
+Ideação: Realizamos sessões de brainstorming para gerar uma variedade de ideias criativas para resolver o problema.
+
+Prototipagem: Criaremos protótipos de baixa fidelidade para testar nossas ideias rapidamente e iterar sobre elas.
+
+Teste e Feedback: Testaremos os protótipos com os usuários e coletamos feedback valioso para aprimorar nossa abordagem.
+Scrum:
+
+Após a fase inicial de Design Thinking, implementamos o Framework Scrum para gerenciar o desenvolvimento do projeto de forma iterativa. Definimos os seguintes papéis e tarefas:
+
+Scrum Master (Raul Duarte Torres de Oliveira): Raul atuou como Scrum Master, sendo responsável por facilitar as reuniões do Scrum, remover impedimentos e garantir que a equipe esteja seguindo os princípios ágeis.
+
+Product Owner (Joao Vitor Carvalho Santos): Joao Vitor Carvalho Santos assumiu o papel de Product Owner, representando o cliente e sendo responsável por definir e priorizar os itens do backlog do produto, garantindo que o projeto atenda às necessidades do cliente.
+
+Equipe de Desenvolvimento (Arthur, Luan, Gustavo, Joao Vitor Pereira Soares Leles): A equipe de desenvolvimento, foi responsável por desenvolver as funcionalidades da solução.
+
+Com essa abordagem ágil, conseguimos criar uma solução que evoluiu de acordo com o feedback dos usuários, atendendo às suas necessidades de forma eficaz. O uso de ferramentas online e a gestão de configuração via GitHub garantiram que todos os membros da equipe estivessem alinhados e pudessem contribuir de forma colaborativa para o sucesso do projeto.
 
 **Links Úteis**:
 
