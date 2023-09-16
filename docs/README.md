@@ -78,8 +78,11 @@ Nosso projeto tem como foco principal atender às necessidades de um público di
 
 ## Histórias de Usuários
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+Como Gabriel, eu quero juntar o dinheiro que ganho no menor aprendiz para investir e garantir um melhor futuro além de ter um pouco mais de lazer, a fim de obter uma melhor condição de vida, investindo e focando nos meus estudos.
 
+Como Neide, eu quero acessar o site pelo meu celular, de forma intuitiva e assim me organizar melhor para assim finalmente conseguir comprar meu apartamento.
+
+Como Robson, pretendo utilizar o site e obter uma resposta rapida, intuitiva e prática independente da plataforma com qual estou acessando para que assim possa realizar meu sonho de viajar para Europa e garantir uma aposentadoria boa.
 **Links Úteis**:
 
 - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
