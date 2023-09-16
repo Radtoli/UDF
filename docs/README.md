@@ -16,7 +16,7 @@ O template para o site é estruturado e permite que a equipe evolua a documenta�
 
 # Introdução
 
-Atualmente a dificuldade na gestão das finanças pessoais é um desafio que afeta milhões pessoas em nossa sociedade. As complexidades do mundo financeiro muitas vezes deixam o indivíduo perdido em um mar de incertezas econômicas. Além disso, a ignorância financeira e a incapacidade de tomar decisões informadas podem levar a dívidas crescentes, estresse financeiro e frustrações ao tentar alcançar metas de vida. Saber organizar suas rendas, lidar com dívidas, e realizar investimentos são conhecimentos essenciais e cada vez mais se torna imprescindível que eles sejam mais acessíveis. 
+Atualmente a dificuldade na gestão das finanças pessoais é um desafio que afeta milhões de pessoas em nossa sociedade. As complexidades do mundo financeiro muitas vezes deixam o indivíduo perdido em um mar de incertezas econômicas. Além disso, a ignorância financeira e a incapacidade de tomar decisões informadas podem levar a dívidas crescentes, estresse financeiro e frustrações ao tentar alcançar metas de vida. Saber organizar suas rendas, lidar com dívidas, e realizar investimentos são conhecimentos essenciais e cada vez mais se torna imprescindível que eles sejam mais acessíveis. 
 
 ## Problema
 
