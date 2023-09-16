@@ -128,30 +128,39 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 As telas foram feitas no Figma, e possuem o objetivo de nos guiar na criação da interface do site.
 A tela de home seria a tela inicial do site, ao abri-lo, apresentando os serviços do site, informações úteis e um botão para login.
+
 ![alt Home](https://github.com/Radtoli/UDF/blob/5d9eae3248e89430bc4683ef32c01eecf449b90b/docs/assets/images/Home1.png)
 
 A tela de login é auto explicativa, um campo para login, senha, com o botão de enviar e duas opções extras, uma para esqueci minha senha e uma para cadastro. É possível visualizar também um esboço da tela de mudança de senha.
+
 ![alt Home](https://github.com/Radtoli/UDF/blob/883102bdea7aec0ae21d4179262f704ce5897b67/docs/assets/images/login.png)
 
 A tela de cadastro inicialmente simples, Nome, email, senha, e um espaço para confirmação da senha, pois todos os outros dados serão pedidos apenas na área do usuário.
+
 ![alt Home](https://github.com/Radtoli/UDF/blob/883102bdea7aec0ae21d4179262f704ce5897b67/docs/assets/images/cadastro.png)
 
 A tela de inicio é a tela que aparecerá para aquele usuário já logado, onde ele encontrará todos os dados que ele forneceu para o funcionamento do plano.
+
 ![alt Home](https://github.com/Radtoli/UDF/blob/883102bdea7aec0ae21d4179262f704ce5897b67/docs/assets/images/inicio.png)
 
 A tela de planilhas será utilizada para uma organização em planilhas das despesas e dos ganhos do usuário, bem como provavelmente, uma forma mais organizada de ver possíveis investimentos e planejamentos.
+
 ![alt Home](https://github.com/Radtoli/UDF/blob/883102bdea7aec0ae21d4179262f704ce5897b67/docs/assets/images/planilhas.png)
 
 A tela de educação financeira visa mostrar conteúdo que os organizadores do site irão apresentar a seus clientes, onde por meio de informativos, documentos, artigos e mais, pretendemos ajudar o usuário a gerir sua vida financeira.
+
 ![alt Home](https://github.com/Radtoli/UDF/blob/883102bdea7aec0ae21d4179262f704ce5897b67/docs/assets/images/educacao%20financeira.png)
 
 Em metas, o usuário poderá completar os campos com seus próprios objetivos, tempo e custo para cada um deles, facilitando-o a visualizar melhor onde deseja chegar.
+
 ![alt Home](https://github.com/Radtoli/UDF/blob/883102bdea7aec0ae21d4179262f704ce5897b67/docs/assets/images/metas.png)
 
 A aba de relatórios mostrará ao usuário relatórios referentes aos dados fornecidos pelo mesmo, como gastos, investimentos, funcos de reserva, entre outros.
+
 ![alt Home](https://github.com/Radtoli/UDF/blob/883102bdea7aec0ae21d4179262f704ce5897b67/docs/assets/images/relatorios.png)
 
 E a última tela, chamada de Visu, pretende mostrar de forma simples ao usuário, onde ele deve colocar os dados que serão utilizados de base para as outras telas, como despesas e ganhos.
+
 ![alt Home](https://github.com/Radtoli/UDF/blob/883102bdea7aec0ae21d4179262f704ce5897b67/docs/assets/images/Visu.png)
 
 
