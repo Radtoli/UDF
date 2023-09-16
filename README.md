@@ -13,7 +13,7 @@ Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
 ## Professores responsáveis
 
-* Pedro Felime Alves de Oliveira 
+* Pedro Felipe Alves de Oliveira 
 
 
 ## Instruções de utilização
