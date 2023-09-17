@@ -67,9 +67,8 @@ Como Robson, pretendo utilizar o site e obter uma resposta rapida, intuitiva e p
   | Painel de Educação Financeira|
   | Painel de Relatorios|
 
-  
-  |Requesitos não Funcionais|
   |---------------------------|
+  |Requesitos não Funcionais|
   | O sistema devera ser capaz de uncionar em diferentes
 plataformas, se adequando aos diversos tipos de telas e
 resoluções.|
