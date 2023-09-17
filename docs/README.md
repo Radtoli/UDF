@@ -58,14 +58,16 @@ Como Robson, pretendo utilizar o site e obter uma resposta rapida, intuitiva e p
 
 ## Requisitos
 
-- Requesitos Funcionais
+  |Requesitos Funcionais|
+  |---------------------------|
   | Visualização Dos gastos em proporção à renda|
   | Validação de Login|
   | Sugestão de Investimento com base na renda|
   | Possiblidade de traçar metas|
   | Painel de Educação Financeira|
   | Painel de Relatorios|
-- Requesitos não Funcionais
+  |Requesitos não Funcionais|
+  |---------------------------|
   | O sistema devera ser capaz de uncionar em diferentes
 plataformas, se adequando aos diversos tipos de telas e
 resoluções.|
@@ -78,6 +80,7 @@ browsers do mercado.|
   
 ## Metodologia
 A metodologia utilizada é o SCRUM e a ferramenta que está sendo utilizada para a organização é o TRELLO
+![alt Trello](https://github.com/Radtoli/UDF/blob/master/docs/assets/images/trello.png)
 
 **Relação em ambiente de trabalho**
 
