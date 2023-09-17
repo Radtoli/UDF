@@ -82,7 +82,9 @@ Para esse tipo de projeto em equipe, é crucial ferramentas para determina o flu
 
 ## User Flow
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+![alt Userflow1](https://github.com/Radtoli/UDF/blob/3b653821e1a477a0a34216b21ebcdddf1c545827/docs/assets/images/User%20Flow%201.png)
+
+![alt Userflow1](https://github.com/Radtoli/UDF/blob/3b653821e1a477a0a34216b21ebcdddf1c545827/docs/assets/images/User%20Flow%202.png)
 
 **Links Úteis**:
 
