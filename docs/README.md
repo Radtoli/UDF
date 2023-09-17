@@ -82,9 +82,7 @@ Para esse tipo de projeto em equipe, é crucial ferramentas para determina o flu
 
 ## User Flow
 
-![alt Userflow1](https://github.com/Radtoli/UDF/blob/3b653821e1a477a0a34216b21ebcdddf1c545827/docs/assets/images/User%20Flow%201.png)
-
-![alt Userflow1](https://github.com/Radtoli/UDF/blob/3b653821e1a477a0a34216b21ebcdddf1c545827/docs/assets/images/User%20Flow%202.png)
+![alt Home](https://github.com/Radtoli/UDF/blob/8f81bb420d6cbf84975034d30f1d37102c1c0df7/docs/assets/images/User%20Flow%201.png)
 
 **Links Úteis**:
 
