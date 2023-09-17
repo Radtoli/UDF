@@ -66,6 +66,8 @@ Como Robson, pretendo utilizar o site e obter uma resposta rapida, intuitiva e p
   | Possiblidade de traçar metas|
   | Painel de Educação Financeira|
   | Painel de Relatorios|
+
+  
   |Requesitos não Funcionais|
   |---------------------------|
   | O sistema devera ser capaz de uncionar em diferentes
