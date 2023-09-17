@@ -80,7 +80,7 @@ regulamentos aplicáveis.|
 browsers do mercado.|
   
 ## Metodologia
-A metodologia utilizada é o SCRUM e a ferramenta que está sendo utilizada para a organização é o TRELLO
+A metodologia utilizada é o SCRUM e a ferramenta que está sendo utilizada para a organização é o TRELLO para a organização e o Figma para o design
 ![alt Trello](https://github.com/Radtoli/UDF/blob/master/docs/assets/images/trello.png)
 
 **Relação em ambiente de trabalho**
