@@ -58,18 +58,26 @@ Como Robson, pretendo utilizar o site e obter uma resposta rapida, intuitiva e p
 
 ## Requisitos
 
-Os requisitos de um projeto são classificados em dois grupos:
-
-- [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
-  correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
-
-Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
+- Requesitos Funcionais
+  | Visualização Dos gastos em proporção à renda|
+  | Validação de Login|
+  | Sugestão de Investimento com base na renda|
+  | Possiblidade de traçar metas|
+  | Painel de Educação Financeira|
+  | Painel de Relatorios|
+- Requesitos não Funcionais
+  | O sistema devera ser capaz de uncionar em diferentes
+plataformas, se adequando aos diversos tipos de telas e
+resoluções.|
+  | O sistema deverá ter alta disponibilidade, funcionando
+sempre quandofor exigido.|
+  | O sistema deverá atender às normas legais, tais como leis e
+regulamentos aplicáveis.|
+  | O sistema deverá funcionar nos principais navegadores
+browsers do mercado.|
+  
 ## Metodologia
-A Metodologia definida se trata de um conjunto de ferramentas e recursos digitais utilizadas por toda a equipe em diversos momentos durante a execução e organização do projeto.
-Para esse tipo de projeto em equipe, é crucial ferramentas para determina o fluxo de tarefas e as prioridades de execução, além disso, foi necessário ferramentas para visualizar a idealização do designer das páginas antes da criação, e para a criação, é imprescindível um recurso que permita versionar os códigos da equipe.
+A metodologia utilizada é o SCRUM e a ferramenta que está sendo utilizada para a organização é o TRELLO
 
 **Relação em ambiente de trabalho**
 
