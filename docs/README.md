@@ -84,6 +84,8 @@ Para esse tipo de projeto em equipe, é crucial ferramentas para determina o flu
 
 ![alt Home](https://github.com/Radtoli/UDF/blob/8f81bb420d6cbf84975034d30f1d37102c1c0df7/docs/assets/images/User%20Flow%201.png)
 
+![alt Home](https://github.com/Radtoli/UDF/blob/454b50f29d0388d1914e2f23689e22ccbbc3c5dd/docs/assets/images/User%20Flow%202.png)
+
 **Links Úteis**:
 
 - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
