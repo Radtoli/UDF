@@ -69,11 +69,11 @@ Como Robson, pretendo utilizar o site e obter uma resposta rapida, intuitiva e p
 
   |Requesitos não Funcionais|
   |---------------------------|
-  | O sistema devera ser capaz de uncionar em diferentes
+  | O sistema devera ser capaz de funcionar em diferentes
 plataformas, se adequando aos diversos tipos de telas e
 resoluções.|
   | O sistema deverá ter alta disponibilidade, funcionando
-sempre quandofor exigido.|
+sempre quand ofor exigido.|
   | O sistema deverá atender às normas legais, tais como leis e
 regulamentos aplicáveis.|
   | O sistema deverá funcionar nos principais navegadores
