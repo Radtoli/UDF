@@ -73,7 +73,7 @@ Como Robson, pretendo utilizar o site e obter uma resposta rapida, intuitiva e p
 plataformas, se adequando aos diversos tipos de telas e
 resoluções.|
   | O sistema deverá ter alta disponibilidade, funcionando
-sempre quand ofor exigido.|
+sempre quando for exigido.|
   | O sistema deverá atender às normas legais, tais como leis e
 regulamentos aplicáveis.|
   | O sistema deverá funcionar nos principais navegadores
