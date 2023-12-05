@@ -4,10 +4,8 @@ Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
 ## Alunos integrantes da equipe
 
-* Raul Duarte
 * Luan Magno
 * Gustavo Anselmo
-* Arthur Faria
 * João Vitor
 * João Vitor P.S
 
