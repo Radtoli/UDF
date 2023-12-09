@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Manjari:wght@100;400&display=swap');
+
+body, header{
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    background-color: #262123;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    width: 5rem;
+}
+
+header p{
+    font-family: 'Julius Sans One', sans-serif;
+    color: #F2D479;
+    font-size: 40px;
+    margin: 0px;
+}
+
+body main{
+    width: 100%;
+    height: 85vh;
+    background-color: #FEF3E2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.side-option h4{
+    font-family: 'Manjari', sans-serif;
+    text-align: center;
+    color: #BF9278;
+    margin-bottom: -5px;
+
+}
+main #sidebar-menu{
+    height: 100%;
+    background-color: rgba(221, 190, 160, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside .side-option{
+    display: flex;
+    border-radius: 15px;
+    justify-content: left;
+    align-items: center;
+    margin: 0px;
+    min-width: 80%;
+    height: 7vh;
+    background-color: #FEF3E2;
+    padding: 2px 15px;
+    border: 1px solid #DDC6A0;
+    font-family: 'Manjari', sans-serif;
+    text-align: center;
+    color: #BF9278;
+    margin-bottom: -5px;
+    font-size: 20px;
+    box-shadow: #262123 1px 1px 3px;
+}
+
+aside .side-option:hover{
+    color: #D9A036;
+    background-color: rgb(250, 244, 235);
+}
+
+
+#content-conta{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content-conta #img-profile{
+    width: 15rem;
+    padding: 4vh;
+}
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 18vw;
+    height: 100%;
+}
+
+#content-conta .column{
+    display: flex;
+    max-width: 50%;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.container{
+    margin: 0px;
+    padding: 0px !important;
+    display: flex;
+}
+
+#content-conta #inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+
+#content-conta #name{
+    background-color: transparent;
+    border: none;
+    font-family: 'Manjari', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    max-width: 100%;
+}
+
+#content-conta input{
+    width: 20vw;
+}
+
+#passwords{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.input-left{
+    padding-left: 11vw;
+}
+
+#content-conta .info-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-conta .inputs{
+    background-color: rgba(221, 198, 160, 0.5);
+    border-radius: 15px;
+    height: 7vh;
+    padding: 0px 5px;
+    border: 1px solid #DDC6A0;
+}
+
+#content-conta .label-edit{
+    font-weight: 600;
+    color: #D9A036;
+}
+
+#content-conta .anchor{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px;
+    font-family: 'Manjari', sans-serif;
+}
+
+.btn-modal{
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+ }
+
+.anchor div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor h5{
+    font-weight: 600;
+    color:#262123;
+}
+.anchor a{
+    font-weight: 500;
+    color:#D9A036;
+}
+
+ .editar{
+    width: 20px;
+}
+
+.editar:hover{
+    cursor: pointer;
+}
+
+#inputs-RIGTH, #inputs-LEFT{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    font-family: 'Manjari', sans-serif;
+}
+
+#inputs-RIGTH{
+    border: 1px solid #D9A036;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+}
+
+#submit-edicao{
+    background-color: #D9A036;
+    color: white;
+    border-radius: 15px;
+    height: 7vh;
+    padding: 0px 5px;
+}
+
+#edit-img{
+    display: flex;
+    justify-content: end;
+}
+
+#content-conta .modal-dialog input{
+    width: 100%;
+}
+
+.div-title, .subtitle, .complemento{
+    width: 88%;
+  }
+  .div-title h1{
+    color: #1E1E1E;
+    font-size: 50px;
+    font-family: 'Manjari', sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .div-title span{
+    color: #D9A036;
+  }
+
+  main .content-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .complemento span{
+    font-weight: 100;
+  }
+
+  .subtitle p{
+    font-size: 30px;
+    font-family: 'Manjari', sans-serif;
+    text-align: center;
+  }
+
+  .complemento{
+    display: flex;
+    font-family: 'Manjari', sans-serif;
+  }
+
+  .complemento .complemento-mensagem{
+    display: flex;
+    align-items: center;
+  }
+
+  .complemento-mensagem p{
+    width: 70%;
+    font-size: 25px;
+  }
+
+  .complemento .background{
+    background-color: #E3BD6B;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 9px 5px 0px 5px;
+  }
+
+  .complemento-slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  
+  .complemento-slogan h1{
+    text-align: end;
+    margin: 0px;
+  }
