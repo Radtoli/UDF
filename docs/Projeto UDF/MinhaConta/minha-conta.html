@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Conta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Manjari:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../Home Page/home.html"><img src="./imagens/UDF.png" alt="UDF_LOGO" /></a>
+      <p>UDF</p>
+    </header>
+    <main id="main-content">
+      <aside id="sidebar-menu" class="col-3">
+        <!-- Menu lateral -->
+        <button class="side-option" id="init">Painel Inicial</button>
+        <button class="side-option" id="account">Minha conta</button>
+        <button class="side-option">Minhas metas</button>
+        <a href="../EntradaseSaidas/index.html"><button class="side-option">Meus gastos</button></a>
+        <a href="../EntradaseSaidas/index.html"><button class="side-option">Minha renda</button></a>
+        <button class="side-option">Relatórios</button>
+        <button class="side-option">Educação financeira</button>
+      </aside>
+      <section id="content-conta" class="col-9 container">
+        <!-- Conteúdo principal -->
+      </section>
+    </main>
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../Login-Cadastro\script.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+      $("#init").click(() => {
+        opt = "init";
+        Conteudo();
+        $("#init").css({
+          color: "#D9A036",
+          backgroundColor: "rgb(250, 244, 235)",
+        });
+
+        $("#account").css({
+          color: "#BF9278",
+          backgroundColor: "#FEF3E2",
+        });
+      });
+
+      $("#account").click(() => {
+        $("#account").css({
+          color: "#D9A036",
+          backgroundColor: "rgb(250, 244, 235)",
+        });
+
+        $("#init").css({
+          color: "#BF9278",
+          backgroundColor: "#FEF3E2",
+        });
+
+        opt = "account";
+        Conteudo();
+        InsereDados();
+      });
+      function BtnHabilitado() {
+        $("#submit-edicao").css({
+          backgroundColor: "#D9A036",
+          color: "white",
+          border: "none",
+        });
+      }
+      $("document").ready(function () {
+        Conteudo();
+        $("#init").css({
+          color: "#D9A036",
+          backgroundColor: "rgb(250, 244, 235)",
+        });
+        //InsereDados();
+      });
+
+      $("#habilit-edit").click(() => {
+        HabilitarEdicao();
+      });
+
+      $("#confirm-pass").click(() => {
+        HabilitarEdicaoSenha();
+        if (HabilitarEdicaoSenha()) BtnHabilitado();
+      });
+
+      $("#submit-edicao").click(() => {
+        SalvarAlteracoes();
+      });
+      //document.querySelector('#habilit-edit').addEventListener('onclick', alteraSenha);
+      //document.querySelector('#confirm-pass').addEventListener('onclick', HabilitarEdicao);
+    </script>
+  </body>
+</html>
