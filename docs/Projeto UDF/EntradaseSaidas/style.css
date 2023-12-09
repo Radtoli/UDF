@@ -1,0 +1,299 @@
+.navImg{
+    width: 50px;
+}
+.navbar{
+    background-color: #262123;
+}
+.navbar-nav .nav-link{
+    color: white;
+}
+.saldo{
+    background: #D9A036;
+    float: right;
+    border-radius: 30px;
+    padding: 5px;
+    margin-right: 30px;
+}
+#atual{
+    color: #D9A036;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main {
+    min-height: 550px;
+}
+
+section{
+    padding: 20px;
+}
+
+body {
+    background-size: 100%;
+}
+.text-center{
+    background-color: #262123;
+    color: white;
+    margin: 0;
+    border: 0;
+}
+.container{
+    margin: 0;
+    background-color: #F2E9BB;
+}
+
+.secao {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; 
+}
+
+.EntradaSaidaBox {
+    background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+
+
+main section h1{
+    margin-bottom: 50px;
+}
+
+main {
+    margin-bottom: 0px;
+}
+
+.caixaVariavel{
+    color: #F2E9BB;
+    background-color: #262123;
+    min-width: 250px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    align-items: center;
+    margin: 50px;
+
+}
+
+.caixaVariavel button{
+    color: white;
+    background-color: gray;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 3px;
+    margin-left: 10px;
+}
+
+.caixaVariavel button:hover{
+    color: gray;
+    background-color: white;
+    font-size: 1.2em;
+    transition: 0.2s;
+}
+
+.caixaVariavel button strong{
+     padding-left: 5px;
+    padding-right: 5px;
+}
+
+.caixaVariavel p{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+main h3 {
+    color: #D9A036;
+    margin-left: 40px;
+}
+
+button a{
+    text-decoration: none;
+    color: #F2E9BB;
+}
+
+.BotaoADicionarEntradaSaida{
+    background-color: #262123;
+    color: #D9A036;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 50px;
+}
+
+/** OUTRA PAGINA **/
+.EnviarFormulario form{
+    position: relative;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    justify-content: space-between;
+    width:60%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+/* Estilizando o placeholder e o texto digitado */
+::placeholder {
+    color: #BF9278;
+    background-color: #262123; /* Cor do placeholder */
+    opacity: 1; /* Mantém a opacidade completa do placeholder */
+}
+
+/* Para navegadores que não suportam ::placeholder */
+input:-ms-input-placeholder {
+    color: #BF9278;
+    background-color: #262123;
+}
+
+input::-webkit-input-placeholder {
+    color: #BF9278;
+    background-color: #262123;
+}
+
+/* Estilo para o texto digitado */
+input {
+    color: #BF9278;
+    background-color: #262123;; /* Cor do texto digitado */
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+form input,label{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    margin-left: 15px;
+    padding: 15px;
+}
+
+#Recorrencia{
+    margin-bottom: 0px;
+}
+
+form select {
+    padding: 5px;
+}
+
+form img{
+    width: 200px;
+    /* margin-left: 200px; Removido esta linha */
+    margin-top: 15px;
+}
+
+form label {
+    width: 60px;
+}
+
+.EnviarFormulario a{
+    background-color: #262123;
+    color: #F2E9BB;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    border-radius: 15px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 135px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.EnviarFormulario a:hover{
+    width: 350px;
+    height: 8%;
+    transition: 0.2s;
+    background-color:#F2E9BB;
+    color: #262123;
+}
+
+#Backgroundlabel{
+    background-color: #262123;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#labelTipo {
+    color: #BF9278;
+    padding: 0px;
+    margin: 0px;
+}
+
+#selectTipo {
+    background-color: #BF9278;
+    color: #F2E9BB;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+form select{
+    background-color: #BF9278;
+    color: #F2E9BB;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100px;
+    border-radius: 15px;
+}
+
+form select option{
+    background-color: #A8826C;
+}
+
+.EnviarFormulario{
+    height: 600px;
+}
+
+#BotaoSalvar {
+    font-size: 1.2em;
+    border-radius: 15px;
+    padding: 15px;
+    position: absolute;
+    bottom: 150px; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Esquerdo, .Direito {
+    width: 50%; 
+}
+
+.Direito {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    width: 50%; 
+}
