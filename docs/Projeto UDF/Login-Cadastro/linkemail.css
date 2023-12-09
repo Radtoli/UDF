@@ -1,0 +1,120 @@
+.nova-senha {
+    background-color: #f2e9bb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .nova-senha .overlap-group-wrapper {
+    background-color: #f2e9bb;
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+  }
+  
+  .nova-senha .overlap-group {
+    position: relative;
+    height: 1088px;
+  }
+  
+  .nova-senha .ellipse {
+    position: absolute;
+    width: 1250px;
+    height: 1026px;
+    top: 62px;
+    left: 93px;
+    background-color: #e8cc86;
+    border-radius: 625px/513px;
+  }
+  
+  .nova-senha .rectangle {
+    position: absolute;
+    width: 741px;
+    height: 586px;
+    top: 286px;
+    left: 347px;
+  }
+  
+  .nova-senha .div {
+    position: absolute;
+    width: 1440px;
+    height: 124px;
+    top: 0;
+    left: 0;
+    background-color: #262123;
+  }
+  
+  .nova-senha .rectangle-2 {
+    position: absolute;
+    width: 296px;
+    height: 97px;
+    top: 749px;
+    left: 573px;
+    background-color: #d9a036;
+    border-radius: 40px;
+  }
+  
+  .nova-senha .text-wrapper {
+    position: absolute;
+    width: 296px;
+    height: 49px;
+    top: 779px;
+    left: 573px;
+    font-family: "Manjari-Bold", Helvetica;
+    font-weight: 700;
+    color: #262123;
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .nova-senha .ellipse-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 805px;
+    left: 1143px;
+    background-color: #26212380;
+    border-radius: 100px;
+  }
+  
+  .nova-senha .urubu {
+    position: absolute;
+    width: 7%;
+    height: 100px;
+    top: 10;
+    left: 670px;
+    object-fit: cover;
+  }
+  
+  .nova-senha .p {
+    position: absolute;
+    width: 655px;
+    top: 322px;
+    left: 390px;
+    font-family: "Inter-LightItalic", Helvetica;
+    font-weight: 300;
+    font-style: italic;
+    color: #d9a036;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .nova-senha .next-page{
+    position: absolute;
+    width: 655px;
+    top: 650px;
+    left: 390px;
+    font-family: "Inter-LightItalic", Helvetica;
+    font-weight: 300;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 44px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
