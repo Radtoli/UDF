@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    height: 200vw;
+    background-color: #fdebb3;
+}
+
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navflex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#navflex h1{
+    font-weight: 300;
+    color: #F2D479;
+}
+
+header{
+    background-color: #262123;
+    max-width: 100%;
+}
+
+nav{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+img{
+    width: 50px;
+}
+
+nav button{
+    background-color: #F2D479;
+    border: none;
+    border-radius: 100px;
+    width: 200px;
+}
+
+nav button a{
+    text-decoration: none;
+    color: #262123;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#container-background{
+    background-color: #f7f2d6;
+    border-radius: 0 0 50px 50px;
+    box-shadow: #262123 0px 2px 20px;
+}
+
+#container{
+    padding: 40px 20px;
+}
+
+#dinheiro{
+    background-color: #F2D479;
+    border-radius: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#dinheiro img{
+    width: 700px;
+    height: 400px;
+}
+
+#containertitle{
+    font-size: 50px;
+}
+
+#lorem{
+    font-size: 20px;
+    text-align: left;
+    width: 50%;
+    margin-top: 20px;
+}
+
+#usar h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+#usar div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#usar div img{
+    width: 400px;
+}
+
+#usar ul li{
+    list-style-type: none;
+    font-size: 40px;  
+    font-weight: 700;
+    text-align: right;
+}
+
+#criar-conta{
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: #262123;
+    width: 700px;
+    display: block;
+    margin: auto;
+}
+
+#criar-conta a{
+    color: #F2D479;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+#servicos h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    color: #cfb25c;
+}
+
+#retangulo1{
+    width: 100%;
+    height: 1000px;
+    background-color: #f7d97f;
+    border-radius: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#retangulo1 li{
+    font-size: 40px;
+    letter-spacing: 10px;
+    line-height: 100px;
+}
