@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    background: url(Background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    background-color: #302a2a;
+    padding: 10px;
+}
+
+img{
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+#menu{
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: 80%;
+    background-color: #302a2a;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+.cadastro h1{
+    text-align: center;
+    color: #d9a035;
+    font-size: 40px;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cadastro button{
+    background-color: #d9a035;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+button{
+    text-decoration: none;
+}
