@@ -13,17 +13,15 @@
     <title>Entradas e Saídas</title>
 </head>
 <body background="./Images/Alterar.png">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a href="..\Home Page\home.html">
-        <img class="navImg" src="Images/UDF.png">
-      </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light">        
+        <a href="../Home Page/home.html"><img class="navImg" src="Images/UDF.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="..\MinhaConta\minha-conta.html">Inicio</a>
-            <a class="nav-item nav-link" href="#">Metas</a>
+            <a class="nav-item nav-link" href="../MinhaConta/minha-conta.html">Inicio</a>
+            <a class="nav-item nav-link" href="../UDFMetas -JVP-Vs-Code/index.html">Metas</a>
           </div>
         </div>
         <div class="saldo">
@@ -45,7 +43,7 @@
               </div>
             </div>
           </div>
-          <a onclick="PegarTipo('entrada', idAtual2)" id="AdicionarEntrada" class="BotaoADicionarEntradaSaida" href="./AdicionarEntradaSaida.html">Adicionar entrada</a>
+          <button onclick="PegarTipo('entrada')" id="AdicionarEntrada" class="BotaoADicionarEntradaSaida">Adicionar entrada</button>
         </section>
         <section id="Saidas">
           <h1>Saidas</h1>
@@ -61,7 +59,7 @@
                   </div>
               </div>            
           </div>
-          <a onclick="PegarTipo('saida', idAtual2)" id="AdicionarEntrada" class="BotaoADicionarEntradaSaida" href="./AdicionarEntradaSaida.html">Adicionar saída</a>
+          <button onclick="PegarTipo('saida')" id="AdicionarSaida" class="BotaoADicionarEntradaSaida">Adicionar saída</button>
       </section>      
       </main>
     <footer class="text-center text-lg-start">
@@ -70,8 +68,16 @@
           © 2023 Copyright: Urubu das Finanças
         </div>
     </footer>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      document.querySelector('#AdicionarEntrada').addEventListener('click', URLUSer);
+      document.querySelector('#AdicionarSaida').addEventListener('click', URLUSer);
+    </script>
 </body>
 </html>
 <!--<div class="caixaVariavel">
                 <p>(nome que a pessoa colocar)          <span>R$: (ValorQueAPessoaColocar)</span><button><strong>X</strong></button></p> 
               </div>  -->
+
+              
