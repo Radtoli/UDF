@@ -2,43 +2,75 @@ let database = {
   usuarios: [
     {
       id: 1,
-      nome: 'Admin',
-      email: 'admin@gmail.com',
-      tel: '123456789',
-      senha: '0000',
-      entradas: { fixas: [], variaveis: [] },
-      saidas: { fixas: [], variaveis: [] },
-    }
-  ]
-}
+      nome: "Admin",
+      email: "admin@gmail.com",
+      tel: "123456789",
+      saldo: "0",
+      senha: "0000",
+    },
+  ],
+
+  entradas: [
+    {
+      idusuario: 1,
+      nome: "Salario principal",
+      valor: "1400",
+      tipo: "fixa",
+      recorrencia: "12",
+    },
+  ],
+
+  saidas: [
+    {
+      idusuario: 1,
+      nome: "Aluguel",
+      valor: "900",
+      tipo: "fixa",
+      recorrencia: "12",
+    },
+  ],
+
+  metas: [
+    {
+      idusuario: 1,
+      valor: "15000",
+      prazo: "5",
+      parcelas: "60",
+      progresso: "0",
+    },
+  ],
+};
 
 let nomeTemporario;
 let emailTemporaro;
 
-let banco = JSON.parse(localStorage.getItem('bancoDeDados'));
+let banco = JSON.parse(localStorage.getItem("bancoDeDados"));
 if (!banco) {
   // Se não houver dados no localStorage, inicialize com os dados originais
   banco = { usuarios: [] };
   banco.usuarios.push(...database.usuarios);
-  localStorage.setItem('bancoDeDados', JSON.stringify(banco));
-  localStorage.setItem('bancoDeDados', JSON.stringify(database));
+  localStorage.setItem("bancoDeDados", JSON.stringify(banco));
+  localStorage.setItem("bancoDeDados", JSON.stringify(database));
 }
 
+const cadastroForm = document.getElementById("cadastroForm");
+const nomeInput = document.getElementById("nome");
+const sobrenomeInput = document.getElementById("sobrenome");
+const emailInput = document.getElementById("email");
+const telInput = document.getElementById("tel");
+const senhaInput = document.getElementById("senha");
+const confirmaSenhaInput = document.getElementById("confirma_senha");
+const btnCadastro = document.getElementById("btnCadastro");
 
-const cadastroForm = document.getElementById('cadastroForm');
-const nomeInput = document.getElementById('nome');
-const sobrenomeInput = document.getElementById('sobrenome');
-const emailInput = document.getElementById('email');
-const telInput = document.getElementById('tel');
-const senhaInput = document.getElementById('senha');
-const confirmaSenhaInput = document.getElementById('confirma_senha');
-const btnCadastro = document.getElementById('btnCadastro');
-
-let todosOsDados = JSON.parse(localStorage.getItem('bancoDeDados')) || [];
-
+let todosOsDados = JSON.parse(localStorage.getItem("bancoDeDados")) || {
+  usuarios: [],
+  entradas: [],
+  saidas: [],
+  metas: []
+};
 
 if (btnCadastro) {
-  btnCadastro.addEventListener('click', function (e) {
+  btnCadastro.addEventListener("click", function (e) {
     e.preventDefault();
 
     const nome = nomeInput.value;
@@ -49,12 +81,12 @@ if (btnCadastro) {
     const confirmaSenha = confirmaSenhaInput.value;
 
     if (!nome || !email || !senha || !confirmaSenha) {
-      alert('Preencha todos os campos obrigatórios.');
+      alert("Preencha todos os campos obrigatórios.");
       return;
     }
 
     if (senha !== confirmaSenha) {
-      alert('As senhas não coincidem. Tente novamente.');
+      alert("As senhas não coincidem. Tente novamente.");
       return;
     }
 
@@ -66,121 +98,159 @@ if (btnCadastro) {
       tel,
       senha,
       id,
-      entradas: { fixas: [], variaveis: [] },
-      saidas: { fixas: [], variaveis: [] },
+
+      entradas: [
+        {
+          idusuario: id,
+          nome: "Salario principal",
+          valor: "1400",
+          tipo: "fixa",
+          recorrencia: "12",
+        },
+      ],
+
+      saidas: [
+        {
+          idusuario: id,
+          nome: "Aluguel",
+          valor: "900",
+          tipo: "fixa",
+          recorrencia: "12",
+        },
+      ],
+
+      metas: [
+        {
+          idusuario: id,
+          valor: "15000",
+          prazo: "5",
+          parcelas: "60",
+          progresso: "0",
+        },
+      ],
     };
 
     todosOsDados.usuarios.push(usuario);
 
-    localStorage.setItem('bancoDeDados', JSON.stringify(todosOsDados));
+    localStorage.setItem("bancoDeDados", JSON.stringify(todosOsDados));
 
     clearFormInputs();
-    alert('Cadastro realizado com sucesso!');
-    window.location.href = 'index.html';
+    alert("Cadastro realizado com sucesso!");
+    window.location.href = "index.html";
   });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  const emailInput = document.getElementById('email');
-  const senhaInput = document.getElementById('senha');
-  const btnLogin = document.getElementById('btnLogin');
+document.addEventListener("DOMContentLoaded", function () {
+  const emailInput = document.getElementById("email");
+  const senhaInput = document.getElementById("senha");
+  const btnLogin = document.getElementById("btnLogin");
 
   if (btnLogin) {
-    btnLogin.addEventListener('click', function (e) {
+    btnLogin.addEventListener("click", function (e) {
       e.preventDefault();
 
       const email = emailInput.value;
       const senha = senhaInput.value;
 
-      todosOsDados = JSON.parse(localStorage.getItem('bancoDeDados')) || [];
+      todosOsDados = JSON.parse(localStorage.getItem("bancoDeDados")) || [];
 
-      const usuarioCadastrado = todosOsDados.usuarios.find(user => user.email === email && user.senha === senha);
+      const usuarioCadastrado = todosOsDados.usuarios.find(
+        (user) => user.email === email && user.senha === senha
+      );
 
+
+      
       const idUsuario = usuarioCadastrado.id;
 
-
       if (usuarioCadastrado) {
-        alert('Login realizado com sucesso!');
+        alert("Login realizado com sucesso!");
         window.location.href = `../MinhaConta/minha-conta.html?id=${idUsuario}`;
       } else {
-        alert('Credenciais incorretas. Tente novamente.');
+        alert("Credenciais incorretas. Tente novamente.");
       }
     });
   }
 });
 
 function clearFormInputs() {
-  nomeInput.value = '';
-  sobrenomeInput.value = '';
-  emailInput.value = '';
-  telInput.value = '';
-  senhaInput.value = '';
-  confirmaSenhaInput.value = '';
+  nomeInput.value = "";
+  sobrenomeInput.value = "";
+  emailInput.value = "";
+  telInput.value = "";
+  senhaInput.value = "";
+  confirmaSenhaInput.value = "";
 }
-
 
 //novos códigos para redefinição de senha
 function enviarEmail() {
-  nomeTemporario = document.getElementById('nome').value;
-  emailTemporario = document.getElementById('email').value;
+  nomeTemporario = document.getElementById("nome").value;
+  emailTemporario = document.getElementById("email").value;
 
-  todosOsDados = JSON.parse(localStorage.getItem('bancoDeDados')) || [];
-  const usuarioCadastrado = todosOsDados.usuarios.find(user => user.nome === nomeTemporario && user.email === emailTemporario);
+  todosOsDados = JSON.parse(localStorage.getItem("bancoDeDados")) || [];
+  const usuarioCadastrado = todosOsDados.usuarios.find(
+    (user) => user.nome === nomeTemporario && user.email === emailTemporario
+  );
 
   if (usuarioCadastrado) {
-    localStorage.setItem('tempNome', nomeTemporario);
-    localStorage.setItem('tempEmail', emailTemporario);
+    localStorage.setItem("tempNome", nomeTemporario);
+    localStorage.setItem("tempEmail", emailTemporario);
 
-    alert('Email enviado com sucesso! Verifique sua caixa de entrada para redefinir a senha.');
-    window.location.href = 'trocasenha.html';
+    alert(
+      "Email enviado com sucesso! Verifique sua caixa de entrada para redefinir a senha."
+    );
+    window.location.href = "trocasenha.html";
   } else {
-    alert('Usuário não encontrado. Por favor, tente novamente.');
+    alert("Usuário não encontrado. Por favor, tente novamente.");
   }
 }
 //redefine a senha
 function redefinirSenha() {
-  const novaSenha = document.getElementById('novaSenha').value;
-  const confirmaSenha = document.getElementById('confirmaSenha').value;
+  const novaSenha = document.getElementById("novaSenha").value;
+  const confirmaSenha = document.getElementById("confirmaSenha").value;
 
   if (novaSenha !== confirmaSenha) {
-    alert('As senhas não coincidem. Tente novamente.');
+    alert("As senhas não coincidem. Tente novamente.");
     return;
   }
 
   // Recupere os valores temporários do localStorage
-  const nomeTemporario = localStorage.getItem('tempNome');
-  const emailTemporario = localStorage.getItem('tempEmail');
+  const nomeTemporario = localStorage.getItem("tempNome");
+  const emailTemporario = localStorage.getItem("tempEmail");
 
-  todosOsDados = JSON.parse(localStorage.getItem('bancoDeDados')) || [];
-  const usuarioCadastrado = todosOsDados.usuarios.find(user => user.nome === nomeTemporario && user.email === emailTemporario);
+  todosOsDados = JSON.parse(localStorage.getItem("bancoDeDados")) || [];
+  const usuarioCadastrado = todosOsDados.usuarios.find(
+    (user) => user.nome === nomeTemporario && user.email === emailTemporario
+  );
 
   if (usuarioCadastrado) {
     // Atualize a senha do usuário
     usuarioCadastrado.senha = novaSenha;
 
     // Salve o usuário atualizado de volta no localStorage
-    localStorage.setItem('bancoDeDados', JSON.stringify(todosOsDados));
+    localStorage.setItem("bancoDeDados", JSON.stringify(todosOsDados));
 
     // Limpe os valores temporários
-    localStorage.removeItem('tempNome');
-    localStorage.removeItem('tempEmail');
+    localStorage.removeItem("tempNome");
+    localStorage.removeItem("tempEmail");
 
-    alert('Senha redefinida com sucesso!');
-    window.location.href = 'index.html'; // Redirecione para a página principal ou outra página
+    alert("Senha redefinida com sucesso!");
+    window.location.href = "index.html"; // Redirecione para a página principal ou outra página
   } else {
-    alert('Usuário não encontrado. Por favor, tente novamente.');
+    alert("Usuário não encontrado. Por favor, tente novamente.");
   }
 }
 
 function removerUsuario(id) {
-  const indiceUsuario = todosOsDados.usuarios.findIndex(usuario => usuario.id === id);
+  const indiceUsuario = todosOsDados.usuarios.findIndex(
+    (usuario) => usuario.id === id
+  );
 
   if (indiceUsuario !== -1) {
     todosOsDados.usuarios.splice(indiceUsuario, 1);
-    localStorage.setItem('bancoDeDados', JSON.stringify(todosOsDados));
-    alert('Usuário removido com sucesso!');
+    localStorage.setItem("bancoDeDados", JSON.stringify(todosOsDados));
+    alert("Usuário removido com sucesso!");
   } else {
-    alert('Usuário não encontrado.');
+    alert("Usuário não encontrado.");
   }
 }
 
@@ -198,44 +268,57 @@ for (let i = 0; i < todosOsDados.usuarios.length; i++) {
       email: todosOsDados.usuarios[i].email,
       telefone: todosOsDados.usuarios[i].tel,
       senha: todosOsDados.usuarios[i].senha,
-    }
+    };
   }
 }
 
+function ClicarBotaoMetas() {
+  window.location.href = `/UDFMetas -JVP-Vs-Code/index.html?id=${idAtual}`;
+}
+
+function ClicarBotaoGastos() {
+  window.location.href = `
+  /EntradaseSaidas/EntradasESaidas.html?id=${idAtual}`;
+}
+
+function ClicarBotaoRenda() {
+  window.location.href = `
+  /EntradaseSaidas/EntradasESaidas.html?id=${idAtual}`;
+}
 
 let ID_USER;
 function InsereDados() {
   let usuario = usuarioAtual;
 
   //LENDO DADOS DOS INPUTS E ATRIBUINDO O VALOR DO LOCALSTORAGE
-  document.querySelector('#change-name').value = usuario.nome;
-  document.querySelector('#change-sobrenome').value = usuario.sobrenome;
-  document.querySelector('#change-email').value = usuario.email;
-  document.querySelector('#change-number').value = usuario.telefone;
-  document.querySelector('#change-password').value = usuario.senha;
+  document.querySelector("#change-name").value = usuario.nome;
+  document.querySelector("#change-sobrenome").value = usuario.sobrenome;
+  document.querySelector("#change-email").value = usuario.email;
+  document.querySelector("#change-number").value = usuario.telefone;
+  document.querySelector("#change-password").value = usuario.senha;
 }
 
 function HabilitarEdicao() {
   let usuario = usuarioAtual;
-  if (document.querySelector('#change-name').disabled == true) {
-    document.querySelector('#change-name').disabled = false;
-    document.querySelector('#change-sobrenome').disabled = false;
-    document.querySelector('#change-email').disabled = false;
-    document.querySelector('#change-number').disabled = false;
-    document.querySelector('#submit-edicao').disabled = false;
+  if (document.querySelector("#change-name").disabled == true) {
+    document.querySelector("#change-name").disabled = false;
+    document.querySelector("#change-sobrenome").disabled = false;
+    document.querySelector("#change-email").disabled = false;
+    document.querySelector("#change-number").disabled = false;
+    document.querySelector("#submit-edicao").disabled = false;
     return false;
   } else {
-    document.querySelector('#change-name').disabled = true;
-    document.querySelector('#change-sobrenome').disabled = true;
-    document.querySelector('#change-email').disabled = true;
-    document.querySelector('#change-number').disabled = true;
-    document.querySelector('#submit-edicao').disabled = true;
+    document.querySelector("#change-name").disabled = true;
+    document.querySelector("#change-sobrenome").disabled = true;
+    document.querySelector("#change-email").disabled = true;
+    document.querySelector("#change-number").disabled = true;
+    document.querySelector("#submit-edicao").disabled = true;
 
-    document.querySelector('#change-name').value = usuario.nome;
-    document.querySelector('#change-sobrenome').value = usuario.sobrenome;
-    document.querySelector('#change-email').value = usuario.email;
-    document.querySelector('#change-number').value = usuario.telefone;
-    document.querySelector('#change-password').value = usuario.senha;
+    document.querySelector("#change-name").value = usuario.nome;
+    document.querySelector("#change-sobrenome").value = usuario.sobrenome;
+    document.querySelector("#change-email").value = usuario.email;
+    document.querySelector("#change-number").value = usuario.telefone;
+    document.querySelector("#change-password").value = usuario.senha;
     return true;
   }
 }
@@ -246,9 +329,8 @@ function insercao() {
 }
 
 function CloseModal(id) {
-  $(`#${id}`).modal('hide');
+  $(`#${id}`).modal("hide");
 }
-
 
 /*function jquery(){
     $('document').ready(function(){
@@ -271,14 +353,13 @@ function HabilitarEdicaoSenha() {
   document.getElementById("resposta").innerText = " ";
 
   if (currentPassword == senha) {
-    let idModal = document.querySelector('#modal-password').id;
+    let idModal = document.querySelector("#modal-password").id;
     document.getElementById("resposta").innerText = "Senha certa!";
     CloseModal(idModal);
-    let novasenha = document.querySelector("#new-password").disabled = false;
-    document.querySelector('#confirm-password').disabled = false;
-    document.querySelector('#submit-edicao').disabled = false;
+    let novasenha = (document.querySelector("#new-password").disabled = false);
+    document.querySelector("#confirm-password").disabled = false;
+    document.querySelector("#submit-edicao").disabled = false;
     return true;
-
   } else {
     document.getElementById("resposta").innerText = "Senha errada";
     return false;
@@ -287,12 +368,12 @@ function HabilitarEdicaoSenha() {
 
 function SalvarAlteracoes() {
   let User = usuarioAtual;
-  let NovoNome = document.querySelector('#change-name');
-  let NovoSobrenome = document.querySelector('#change-sobrenome').value;
-  let NovoEmail = document.querySelector('#change-email').value;
-  let NovoNumero = document.querySelector('#change-number').value;
-  let NovaSenha = document.querySelector('#new-password'); // nova senha
-  let ConfirmSenha = document.querySelector('#confirm-password').value;
+  let NovoNome = document.querySelector("#change-name");
+  let NovoSobrenome = document.querySelector("#change-sobrenome").value;
+  let NovoEmail = document.querySelector("#change-email").value;
+  let NovoNumero = document.querySelector("#change-number").value;
+  let NovaSenha = document.querySelector("#new-password"); // nova senha
+  let ConfirmSenha = document.querySelector("#confirm-password").value;
 
   if (NovoNome.disabled == false) {
     User.nome = NovoNome.value;
@@ -309,7 +390,7 @@ function SalvarAlteracoes() {
       }
     }
 
-    localStorage.setItem('bancoDeDados', JSON.stringify(todosOsDados));
+    localStorage.setItem("bancoDeDados", JSON.stringify(todosOsDados));
     window.location.reload();
   }
 
@@ -322,19 +403,18 @@ function SalvarAlteracoes() {
           todosOsDados.usuarios[i].senha = User.senha;
         }
       }
-      localStorage.setItem('bancoDeDados', JSON.stringify(todosOsDados));
+      localStorage.setItem("bancoDeDados", JSON.stringify(todosOsDados));
       window.location.reload();
-      alert("Senha alterada com sucesso!")
+      alert("Senha alterada com sucesso!");
     } else {
       alert("Confirme sua nova senha!");
     }
   }
-
 }
 
 let opt = "init";
 function Conteudo() {
-  let painel = document.querySelector('#init');
+  let painel = document.querySelector("#init");
   let User = usuarioAtual;
   let str = "";
 
@@ -359,8 +439,7 @@ function Conteudo() {
           </div>
         </div>
       </div>`;
-  }
-  else {
+  } else {
     str = `<div class="main-content">
         <div id="profile" class="col-6"> <!-- Imagem da conta -->
           <div id="edit-img">
@@ -566,113 +645,250 @@ function Conteudo() {
         <p>R$9.575,00</p>
         <a href="">Ver mais</a>
       </div>
-    </div>`
+    </div>`;
   }
   document.querySelector("#content-conta").innerHTML = str;
 }
 
-
 //PARTE LUAN (ENTRADAS E SAÍDAS)
 
 var tipo;
+let entradaAtual = [];
+let saidaAtual = [];
 
-function PegarTipo(TipoSelecionado){
-    sessionStorage.setItem('tipo', TipoSelecionado);
+for (let i = 0; i < todosOsDados.usuarios.length; i++) {
+  if (todosOsDados.usuarios[i].id == idAtual) {
+    let usuarioAtualEntrada = {
+      entradaAtual: todosOsDados.entradas,
+      saidaAtual: todosOsDados.saidas,
+      PosicaoUsuario: i,
+    };
+  }
 }
 
-window.onload = function() {
-    if (!localStorage.getItem('entradas')) {
-        localStorage.setItem('entradas', JSON.stringify({fixas: [], variaveis: []}));
-    }
-    if (!localStorage.getItem('saidas')) {
-        localStorage.setItem('saidas', JSON.stringify({fixas: [], variaveis: []}));
-    }
-
-    // Exibe os dados
-    exibirDados();
+function PegarTipo(TipoSelecionado) {
+  sessionStorage.setItem("tipo", TipoSelecionado);
 }
 
-function SalvarDados(){
-    alert('Dados Salvos!');
-    var tipo = sessionStorage.getItem('tipo');
-    var nome = document.getElementById('Nome').value;
-    var valor = document.getElementById('Valor').value;
-    var recorrencia = document.getElementById('Recorrencia').value;
-    var selectTipo = document.getElementById('selectTipo');
+window.onload = function () {
+  if (!localStorage.getItem("entradas")) {
+    localStorage.setItem(
+      "entradas",
+      JSON.stringify({ fixas: [], variaveis: [] })
+    );
+  }
+  if (!localStorage.getItem("saidas")) {
+    localStorage.setItem(
+      "saidas",
+      JSON.stringify({ fixas: [], variaveis: [] })
+    );
+  }
+  // Exibe os dados
+  exibirDados();
+};
+
+function SalvarDados() {
+  alert("Dados Salvos!");
+  // Verifique se todosOsDados está definido e se entradas e saidas são arrays
+  if (todosOsDados && todosOsDados.entradas && todosOsDados.saidas) {
+    var tipo = sessionStorage.getItem("tipo");
+    var nome = document.getElementById("Nome").value;
+    var valor = document.getElementById("Valor").value;
+    var recorrencia = document.getElementById("Recorrencia").value;
+    var selectTipo = document.getElementById("selectTipo");
     var tipoSelecionadoFixaOuVariavel = selectTipo.options[selectTipo.selectedIndex].value;
 
-    var novoItem = { Nome: nome, Valor: valor, Recorrencia: recorrencia };
-
-    if(tipo == 'entrada'){
-        var entradas = JSON.parse(localStorage.getItem('entradas'));
-        if(tipoSelecionadoFixaOuVariavel == "Fixa"){
-            entradas.fixas.push(novoItem);
-        } else if(tipoSelecionadoFixaOuVariavel == "Variável"){
-            entradas.variaveis.push(novoItem);
-        }
-        localStorage.setItem('entradas', JSON.stringify(entradas));
-    } else if(tipo == 'saida'){
-        var saidas = JSON.parse(localStorage.getItem('saidas'));
-        if(tipoSelecionadoFixaOuVariavel == "Fixa"){
-            saidas.fixas.push(novoItem);
-        } else if(tipoSelecionadoFixaOuVariavel == "Variável"){
-            saidas.variaveis.push(novoItem);
-        }
-        localStorage.setItem('saidas', JSON.stringify(saidas));
-    }
-}
-
-function createClickHandler(k, secao, tipo, dados) {
-    return function() {
-        // Remove o item do array
-        dados.splice(k, 1);
-
-        // Atualiza o localStorage
-        if(secao == 'entradas') {
-            var entradas = JSON.parse(localStorage.getItem('entradas'));
-            entradas[tipo] = dados;
-            localStorage.setItem('entradas', JSON.stringify(entradas));
-        } else if(secao == 'saidas') {
-            var saidas = JSON.parse(localStorage.getItem('saidas'));
-            saidas[tipo] = dados;
-            localStorage.setItem('saidas', JSON.stringify(saidas));
-        }
-
-        // Atualiza a exibição dos dados
-        exibirDados();
+    var novoItem = {
+      idusuario: idAtual,
+      nome: nome,
+      valor: valor,
+      tipo: tipoSelecionadoFixaOuVariavel,
+      recorrencia: recorrencia
     };
-}
 
-function exibirDados() {
-    var entradas = JSON.parse(localStorage.getItem('entradas'));
-    var saidas = JSON.parse(localStorage.getItem('saidas'));
+    if (tipo == "entrada") {
+      // Certifique-se de que entradas é um array
+      if (!todosOsDados.entradas) {
+        todosOsDados.entradas = [];
+      }
 
-    var tipos = ['fixas', 'variaveis'];
-    var secoes = ['entradas', 'saidas'];
-
-    for (var i = 0; i < secoes.length; i++) {
-        for (var j = 0; j < tipos.length; j++) {
-            var secao = secoes[i];
-            var tipo = tipos[j];
-            var dados = secao == 'entradas' ? entradas[tipo] : saidas[tipo];
-            var container = document.getElementById(secao + tipo);
-
-            // Limpa o conteúdo existente
-            container.innerHTML = '';
-
-            // Adiciona novos itens
-            for (var k = 0; k < dados.length; k++) {
-                var item = dados[k];
-                var div = document.createElement('div');
-                div.className = 'caixaVariavel';
-                div.innerHTML = '<p>' + item.Nome + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <span>R$:' + item.Valor + '</span><button id="btn'+k+'"><strong>X</strong></button></p>';
-                container.appendChild(div);
-
-                // Adiciona evento de clique ao botão
-                document.getElementById('btn'+k).addEventListener('click', createClickHandler(k, secao, tipo, dados));
-            }
-        }
+      todosOsDados.entradas.push(novoItem);
+    } else if (tipo == "saida") {
+      // Certifique-se de que saidas é um array
+      if (!todosOsDados.saidas) {
+        todosOsDados.saidas = [];
+      }
+      todosOsDados.saidas.push(novoItem);
     }
+    localStorage.setItem("bancoDeDados", JSON.stringify(todosOsDados));
+    window.location.href = `EntradasESaidas.html?id=${idAtual}`;
+  } else {
+    console.error("Erro: 'entradas' ou 'saidas' não estão definidos em 'todosOsDados'.");
+  }
 }
 
+let PosicaoUsuario;
+function exibirDados() {
+  for (let i = 0; i < todosOsDados.usuarios.length; i++) {
+    if (todosOsDados.usuarios[i].id == idAtual) {
+      entradaAtual = todosOsDados.entradas;
+      saidaAtual = todosOsDados.saidas;
+      PosicaoUsuario = i;
+      
+    }
+  }
+  for (let i = 0; i < entradaAtual.length; i++) {
+    // Exibir entradas
+    if (entradaAtual[i].tipo == "Fixa" && entradaAtual[i].idusuario == todosOsDados.usuarios[PosicaoUsuario].id) 
+    {
+      var container = document.getElementById('entradasfixas');
+      var div = document.createElement("div");
+      div.className = "caixaVariavel";
+      div.innerHTML =
+      "<p>" +
+      entradaAtual[i].nome +
+      "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <span>R$:" +
+      entradaAtual[i].valor +
+      '</span><button id="btn' +
+      i +
+      '"><strong>X</strong></button></p>';
+    container.appendChild(div);
 
+    document.getElementById('btn' + i).addEventListener('click', (function(index) {
+      return function() {
+        removerItemEntrada(index);
+      };
+    })(i));
+    } else if(entradaAtual[i].tipo == "Variavel" && entradaAtual[i].idusuario == todosOsDados.usuarios[PosicaoUsuario].id){
+      var container = document.getElementById('entradasvariaveis');
+      var div = document.createElement("div");
+      div.className = "caixaVariavel";
+      div.innerHTML =
+      "<p>" +
+      entradaAtual[i].nome +
+      "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <span>R$:" +
+      entradaAtual[i].valor +
+      '</span><button id="btn' +
+      i +
+      '"><strong>X</strong></button></p>';
+    container.appendChild(div);
+
+    // Adicionando evento de clique ao botão
+    document.getElementById('btn' + i).addEventListener('click', (function(index) {
+      return function() {
+        removerItemEntrada(index);
+      };
+    })(i));
+    }
+  }
+
+  //saidas
+  for (let i = 0; i < saidaAtual.length; i++) {
+    if (saidaAtual[i].tipo == "Fixa" && saidaAtual[i].idusuario == todosOsDados.usuarios[PosicaoUsuario].id) {
+      var container = document.getElementById('saidasfixas');
+      var div = document.createElement("div");
+      div.className = "caixaVariavel";
+      div.innerHTML =
+      "<p>" +
+      saidaAtual[i].nome +
+      "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <span>R$:" +
+      saidaAtual[i].valor +
+      '</span><button id="btn' +
+      i +
+      '"><strong>X</strong></button></p>';
+    container.appendChild(div);
+
+    // Adicionando evento de clique ao botão
+    document.getElementById('btn' + i).addEventListener('click', (function(index) {
+      return function() {
+        removerItemSaida(index);
+      };
+    })(i));
+    } else if(saidaAtual[i].tipo == "Variavel" && saidaAtual[i].idusuario == todosOsDados.usuarios[PosicaoUsuario].id){
+      var container = document.getElementById('saidasvariaveis');
+      var div = document.createElement("div");
+      div.className = "caixaVariavel";
+      div.innerHTML =
+        "<p>" +
+        saidaAtual[i].nome +
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <span>R$:" +
+        saidaAtual[i].valor +
+        '</span><button id="btn' +
+        i +
+        '"><strong>X</strong></button></p>';
+      container.appendChild(div);
+
+      // Adicionando evento de clique ao botão
+      document.getElementById('btn' + i).addEventListener('click', (function(index) {
+        return function() {
+          removerItemSaida(index);
+        };
+      })(i));
+    }
+  }
+
+//Remover item
+function removerItemEntrada(index) {
+
+  entradaAtual.splice(index, 1);
+  atualizarLocalStorage(entradaAtual,saidaAtual);
+  window.location.reload();
+}
+
+function removerItemSaida(index) {
+  saidaAtual.splice(index, 1);
+  atualizarLocalStorage(entradaAtual,saidaAtual);
+  window.location.reload();
+}
+
+function atualizarLocalStorage(entradasAtualizadas, saidasAtualizadas){
+  let BancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados"));
+  BancoDeDados.entradas = entradasAtualizadas;
+  BancoDeDados.saidas = saidasAtualizadas;
+  localStorage.setItem('bancoDeDados', JSON.stringify(BancoDeDados));
+
+}
+
+  /*
+  var tipos = ["fixas", "variaveis"];
+  var secoes = ["entradas", "saidas"];
+
+  for (var i = 0; i < secoes.length; i++) {
+    for (var j = 0; j < tipos.length; j++) {
+      var secao = secoes[i];
+      var tipo = tipos[j];
+      var dados = secao == "entradas" ? entradas[tipo] : saidas[tipo];
+      var container = document.getElementById(secao + tipo);
+
+      // Limpa o conteúdo existente
+      container.innerHTML = "";
+
+      // Adiciona novos itens
+      for (var k = 0; k < dados.length; k++) {
+        var item = dados[k];
+        var div = document.createElement("div");
+        div.className = "caixaVariavel";
+        div.innerHTML =
+          "<p>" +
+          item.Nome +
+          "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <span>R$:" +
+          item.Valor +
+          '</span><button id="btn' +
+          k +
+          '"><strong>X</strong></button></p>';
+        container.appendChild(div);
+
+        // Adiciona evento de clique ao botão
+        document
+          .getElementById("btn" + k)
+          .addEventListener("click", createClickHandler(k, secao, tipo, dados));
+      }
+    }
+  }
+
+  */
+}
+
+function URLUSer() {
+  window.location.href = `AdicionarEntradaSaida.html?id=${idAtual}`;
+}
