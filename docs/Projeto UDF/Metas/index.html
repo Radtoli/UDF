@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <title>Urubu das Financas - O melhor sites para organizar suas financas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="menu-css/img/favicon.png" type="image/ico" />
+  <script src="script.js"></script>
+  
+  
+  
+
+</head>
+
+<body>
+
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="Icones/urubu 1.png" alt="Logo">
+      <span>UDF</span>
+    </div>
+    <ul class="links">
+      <li><a href="../MinhaConta/minha-conta.html">Início</a></li>
+      <li><a href="#"><span>Metas</span></a></li>
+    </ul>
+    <div class="saldo">
+      <span>Saldo : R$1100 </span>
+    </div>
+  </div>
+
+
+  <nav class="menu-nav">
+
+    <div class="container">
+
+      <input id="responsive-menu" type="checkbox">
+      <label for="responsive-menu"><img src="Icones/urubu 1.png"> <span id="menu-icon"></span></label>
+
+      <div id="overlay"></div>
+      <ul>
+
+        <li><a href="#" title="Login">Início</a></li>
+        <li><a href="#" title="Home">Planilhas</a></li>
+        <li><a href="#" title="Cauculo">Educação</a></li>
+        <li><a href="#" title="Finanças">Metas</a></li>
+        <li><a href="#" title="Arquivos">Relatórios</a></li>
+
+      </ul>
+
+
+      <ul class="redes-sociais">
+
+        <li>
+          <a>
+            <i class="fab fa-facebook"></i>
+            <span class="screen-reader-text">Facebook</span>
+          </a>
+        </li>
+
+        <li>
+          <a>
+            <i class="fab fa-instagram"></i>
+            <span class="screen-reader-text">Instagram</span>
+          </a>
+        </li>
+
+        <li>
+          <a>
+            <i class="fab fa-pinterest"></i>
+            <span class="screen-reader-text">pinterest</span>
+          </a>
+        </li>
+
+        <li>
+          <a>
+            <i class="fab fa-twitter"></i>
+            <span class="screen-reader-text">Twitter</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+<!-- Metas (início)  -->
+  
+  <main>
+    
+    <div class="container">
+      
+      <div id="semMetasDef">
+
+        <img src="Icones/prancheta.png" alt="prancheta" class ="iconeGrande" >
+        <p>Você não tem <br> nenhuma <span>meta</span><br> definida</p>
+
+      </div>
+
+      <!--<div id="metaPronta">
+
+        <div class="objMetaPronta">
+          
+          <p>Objetivo</p>
+          <img src="Icones/cofrinho.png" alt="cofrinho" class ="iconeGrande2" >
+
+        </div>
+
+        <div class="valoresMetaPronta">
+
+          <div><span class="mostraDados1">Valor: 15.000 R$</span></div>
+          <div><span class="mostraDados1">Prazo: 10 Meses</span></div>
+          <div><span class="mostraDados2">Parcelas:</span><span class="mostraDados3">R$1500/mês</span></div>
+          <div><span class="mostraDados2">Progresso:</span> <span class="mostraDados3">R$3000</span></div>
+
+          </div>  
+
+        </div>-->
+
+     
+
+      <button id="novaMeta">+ Nova Meta</button>
+     
+      <div id="criandoMeta">
+
+        <div id="selecionarIcone">
+          
+          <p class = sImgP>Selecione um icone</p>
+            <img src="Icones/adicionarImagem .png" class="iconeSelecionado" alt="icone">
+            
+          
+          <div class="iconesDisponiveis">
+
+            <img  src="Icones/cofrinho.png" class="iconeDisponivel">
+            <img  src="Icones/graduacao.png" class="iconeDisponivel">
+            <img  src="Icones/aliancas-de-casamento.png" class="iconeDisponivel">
+            <img  src="Icones/documento.png" class="iconeDisponivel">
+            <img  src="Icones/passagem-de-aviao.png" class="iconeDisponivel">
+            <img  src="Icones/bagagem-de-viagem.png" class="iconeDisponivel">
+            <img  src="Icones/controle-de-video-game.png" class="iconeDisponivel">           
+            <img  src="Icones/presente.png" class="iconeDisponivel">
+            <img  src="Icones/investimento.png" class="iconeDisponivel">
+            <img  src="Icones/carteira-de-motorista.png" class="iconeDisponivel">
+            <img  src="Icones/seguro.png" class="iconeDisponivel">
+            <img  src="Icones/carro.png" class="iconeDisponivel">
+            <img  src="Icones/computador-de-mesa.png" class="iconeDisponivel">
+            <img  src="Icones/arvore-de-natal.png" class="iconeDisponivel">
+            <img  src="Icones/calendario.png" class="iconeDisponivel">
+            <img  src="Icones/iphone.png" class="iconeDisponivel">
+            <img  src="Icones/bilhete.png" class="iconeDisponivel">
+            <img  src="Icones/moto.png" class="iconeDisponivel">
+            <img  src="Icones/ingressos.png" class="iconeDisponivel">
+            <img  src="Icones/violao.png" class="iconeDisponivel">
+
+          </div>
+          
+          
+        </div>
+
+        <form id="editarSalvar">
+
+          <div><span class="inserirDados">Objetivo:<input type=text id="inputObjetivo" placeholder="Objetivo" readonly></span></div>
+          <div><span class="inserirDados">Valor Pretendido:<input type="number" id="inputValor"></span></div>
+          <div><span class="inserirDados">Prazo:<input type=number id="inputPrazo"></span></div>
+
+          <span class="salvarMeta"type="submit"><button  id="btnSalvarMeta" >Salvar</button></span>
+
+        </form>
+
+      </div>
+      
+      <div class="popover" id="popover">O objetivo não pode ser alterado.</div>
+      
+    </div>
+    
+  </main>
+  
+<!-- Metas (Fim)  -->
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const noticiasContainer = document.getElementById("noticias");
+
+      // Substitua a URL abaixo pela URL de sua API de notícias
+      const apiUrl = "https://www.b3.com.br/pt_br/para-voce";
+
+      // Fazer uma solicitação GET para a API
+      fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          // Processar os dados da API e exibir as notícias
+          data.forEach((noticia) => {
+            const noticiaDiv = document.createElement("div");
+            noticiaDiv.innerHTML = `
+                        <h2>${noticia.title}</h2>
+                        <p>${noticia.content}</p>
+                    `;
+            noticiasContainer.appendChild(noticiaDiv);
+          });
+        })
+        .catch((error) => {
+          console.error("Erro ao buscar notícias:", error);
+        });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cheerio/1.0.0/cheerio.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const noticiasContainer = document.getElementById("noticias");
+
+      // Substitua a URL abaixo pela URL do site de onde deseja extrair notícias
+      const siteUrl = "https://www.b3.com.br/pt_br/para-voce";
+
+      // Fazer uma solicitação GET para a página
+      fetch(siteUrl)
+        .then((response) => response.text())
+        .then((html) => {
+          const $ = cheerio.load(html);
+
+          // Selecione os elementos HTML que contêm os títulos das notícias
+          const titulos = [];
+          $("seletor-do-titulo").each(function () {
+            const titulo = $(this).text();
+            titulos.push(titulo);
+          });
+
+          // Exiba os títulos das notícias no seu site
+          titulos.forEach((titulo) => {
+            const noticiaDiv = document.createElement("div");
+            noticiaDiv.innerHTML = <h2>${titulo}</h2>;
+            noticiasContainer.appendChild(noticiaDiv);
+          });
+        })
+        .catch((error) => {
+          console.error("Erro ao buscar notícias:", error);
+        });
+    });
+  </script>
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2023 Urubu das Finanças</p>
+      <ul class="redes-sociais-rodape">
+        <li>
+          <a href="#" title="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Pinterest">
+            <i class="fab fa-pinterest"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
