@@ -28,9 +28,9 @@
         <!-- Menu lateral -->
         <button class="side-option" id="init">Painel Inicial</button>
         <button class="side-option" id="account">Minha conta</button>
-        <button class="side-option">Minhas metas</button>
-        <a href="../EntradaseSaidas/index.html"><button class="side-option">Meus gastos</button></a>
-        <a href="../EntradaseSaidas/index.html"><button class="side-option">Minha renda</button></a>
+        <button class="side-option" id="clickmetas">Minhas metas</button>
+        <button class="side-option" id="clickgastos">Meus gastos</button>
+        <button class="side-option" id="clickrenda">Minha renda</button>
         <button class="side-option">Relatórios</button>
         <button class="side-option">Educação financeira</button>
       </aside>
@@ -50,6 +50,8 @@
     <script src="jquery-3.7.1.min.js"></script>
 
     <script>
+      
+      
       $("#init").click(() => {
         opt = "init";
         Conteudo();
@@ -109,6 +111,10 @@
       });
       //document.querySelector('#habilit-edit').addEventListener('onclick', alteraSenha);
       //document.querySelector('#confirm-pass').addEventListener('onclick', HabilitarEdicao);
+
+      document.querySelector("#clickmetas").addEventListener('click',ClicarBotaoMetas);
+      document.querySelector("#clickgastos").addEventListener('click',ClicarBotaoGastos);
+      document.querySelector("#clickrenda").addEventListener('click',ClicarBotaoRenda);
     </script>
   </body>
 </html>
